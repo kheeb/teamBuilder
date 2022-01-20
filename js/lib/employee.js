@@ -1,5 +1,5 @@
+// create parent class of Employee with properties required by all + their methods
 class Employee {
-  // information requested from all employees
   constructor(name, id, email) {
     this.name = name;
     this.id = id;
@@ -23,4 +23,5 @@ class Employee {
   }
 }
 
+// export the Employee class
 module.exports = Employee

@@ -6,6 +6,11 @@ const Engineer = require('./js/lib/engineer');
 const Intern = require('./js/lib/intern');
 const Manager = require('./js/lib/manager');
 
+
+// const outputDirectory = path.resolve(__dirname, 'output');
+// const setTeam = path.join(outputDirectory, 'myTeam.html');
+const render = require('./src/generateHTML');
+
 inquirer
 const questions = [
         {
@@ -66,23 +71,34 @@ const generateTeam = () => {
     inquirer
         .prompt(questions)
             .then((answers) => {
+                // pushes manager + their info to team
                 if (answers.role === 'Manager') {
                     const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
                     team.push(manager);
                 }
+                 // pushes engineer + their info to team
                 if (answers.role === 'Engineer') {
                     const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
                     team.push(engineer);
                 }
+                 // pushes info + their info to team
                 if (answers.role === 'Intern') {
                     const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
                     team.push(intern);
                 }
+                // runs through prompts if user desires adding another member
                 if (answers.addMember) {
                     generateTeam();
                 } else {
+                    // if finished adding members, creates roster of each employee into a team displayed in the console
                     team.forEach((team) => {
                         console.log(team);
+                    });
+                    fs.writeFile("team.html", render(team), (err) => {
+                        if (err) {
+                            throw err;
+                        }
+                        console.log('Successfully created new team HTML!');
                     });
                 }
              });

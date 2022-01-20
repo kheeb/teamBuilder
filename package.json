@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/kheeb/teamBuilder#readme",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "react-materialize": "^3.10.0"
   },
   "devDependencies": {
     "jest": "^27.4.7"
