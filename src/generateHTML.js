@@ -11,7 +11,7 @@ function generateHTMl(teamArray) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body style="background-color:silver;>
     <div class="container">
         <div class="row">
           <div class="col s12">
