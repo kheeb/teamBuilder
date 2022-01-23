@@ -7,8 +7,6 @@ const Intern = require('./js/lib/intern');
 const Manager = require('./js/lib/manager');
 
 
-// const outputDirectory = path.resolve(__dirname, 'output');
-// const setTeam = path.join(outputDirectory, 'myTeam.html');
 const render = require('./src/generateHTML');
 
 inquirer
