@@ -14,10 +14,12 @@ function generateHTMl(teamArray) {
   <body>
     <div class="container">
         <div class="row">
-          <div class="col s12>
-            <div class="card blue grey darken-1">
+          <div class="col s12">
+            <div class="card-panel blue grey darken-1">
               <div class="card-content white-text">
-                <span class="card-title"><h2>My Team<h2/></span>
+                <span class="card-title">
+                  <h2 class="center-align">My Team<h2/>
+                </span>
               </div>
             </div>
           </div>
@@ -33,15 +35,14 @@ function generateHTMl(teamArray) {
               <div class="card-content white-text">
                 <span class="card-title"><h4>${person.name}<i class="material-icons right">business_center</i></span></h4>
                   <h5>${person.getRole()}</h5>
-                    <p>email: ${person.email}
-                    <br>
+                    <p>
                     id: ${person.id}
                     <br>
                     office number: ${person.getOfficeNumber()}
                     </p>
               </div>
                 <div class="card-action">
-                <a href="${person.email}"> email employee</a>
+                <a href="mailto:${person.email}"> ${person.email}</a>
                 </div>
             </div>
           </div>`;
@@ -54,15 +55,14 @@ function generateHTMl(teamArray) {
               <div class="card-content white-text">
                 <span class="card-title"><h4>${person.name}<i class="material-icons right">grade</i></span></h4>
                   <h5>${person.getRole()}</h5>
-                    <p>email: ${person.email}
-                    <br>
+                    <p>
                     id: ${person.id}
                     <br>
                     school: ${person.getSchool()}
                     </p>
               </div>
                 <div class="card-action">
-                <a href="${person.email}"> email employee</a>
+                <a href="mailto:${person.email}"> ${person.email}</a>
                 </div>
             </div>
           </div>`;
@@ -75,15 +75,14 @@ function generateHTMl(teamArray) {
               <div class="card-content white-text">
                 <span class="card-title"><h4>${person.name}<i class="material-icons right">build</i></span></h4>
                   <h5>${person.getRole()}</h5>
-                    <p>email: ${person.email}
-                    <br>
+                    <p>
                     id: ${person.id}
                     <br>
                     github: <a href="https://github.com/${person.github}">employee profile</a>
                     </p>
               </div>
                 <div class="card-action">
-                <a href="${person.email}"> email employee</a>
+                <a href="mailto:${person.email}"> ${person.email}</a>
                 </div>
             </div>
           </div>`;
@@ -98,5 +97,6 @@ function generateHTMl(teamArray) {
 </html>
 `;
 }
+
 
 module.exports = generateHTMl;
