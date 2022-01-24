@@ -4,17 +4,20 @@
   With this program, a user can build their own HTML site directly from the command line in their integrated terminal in order to keep track of their employee's and their information.
 
 ## Table of Contents
-    * [Installation](#Installation)
-    * [Usage](#Usage)
-    * [License](#License)
-    * [Contributing](#Contributing)
-    * [Tests](#Tests)
+   * [Installation](#Installation)
+   * [Usage](#Usage)
+   * [License](#License)
+   * [Contributing](#Contributing)
+   * [Tests](#Tests)
 
 ## Installation
   Clone the repo down to your local machine, then open the index.js file inside the integrated terminal.
 
 ## Usage
   While inside the integrated terminal, run 'node index.js' and follow the question prompts to add employees, then when you're done adding team members, the app will create your new HTML file.
+  
+## Demo
+   ![image](https://user-images.githubusercontent.com/93744725/150801370-59f7d8b7-a425-4096-9b87-32a6c7893c4c.png)
   
 ## License
   MIT is the chosen license for this project.
