@@ -11,14 +11,14 @@ function generateHTMl(teamArray) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body style="background-color:silver;>
+  <body style="background-color:#FFF0F5">
     <div class="container">
         <div class="row">
           <div class="col s12">
-            <div class="card-panel blue grey darken-1">
+            <div class="card-panel blue-grey darken-4">
               <div class="card-content white-text">
                 <span class="card-title">
-                  <h2 class="center-align">My Team<h2/>
+                  <h3 class="center-align">My Team<h3/>
                 </span>
               </div>
             </div>
@@ -31,9 +31,11 @@ function generateHTMl(teamArray) {
           if (person.getRole() === "Manager") {
           return `
           <div class="col s12 m6 l4">
-            <div class="card red darken-3">
+            <div class="card light-blue darken-1">
               <div class="card-content white-text">
-                <span class="card-title"><h4>${person.name}<i class="material-icons right">business_center</i></span></h4>
+                <span class="card-title">
+                  <h4>${person.name}<i class="material-icons right">business_center</i>
+                  </span></h4>
                   <h5>${person.getRole()}</h5>
                     <p>
                     id: ${person.id}
@@ -51,7 +53,7 @@ function generateHTMl(teamArray) {
           if (person.getRole() === "Intern") {
           return `
           <div class="col s12 m6 l4">
-            <div class="card green darken-3">
+            <div class="card light-green darken-1">
               <div class="card-content white-text">
                 <span class="card-title"><h4>${person.name}<i class="material-icons right">grade</i></span></h4>
                   <h5>${person.getRole()}</h5>
@@ -71,18 +73,20 @@ function generateHTMl(teamArray) {
           if (person.getRole() === "Engineer") {
           return `
           <div class="col s12 m6 l4">
-            <div class="card blue darken-2">
+            <div class="card pink accent-1">
               <div class="card-content white-text">
                 <span class="card-title"><h4>${person.name}<i class="material-icons right">build</i></span></h4>
                   <h5>${person.getRole()}</h5>
                     <p>
                     id: ${person.id}
                     <br>
-                    github: <a href="https://github.com/${person.github}">employee profile</a>
+                    github: <a href="https://github.com/${person.github}">visit profile</a>
                     </p>
               </div>
                 <div class="card-action">
-                <a href="mailto:${person.email}"> ${person.email}</a>
+                  <div class="card-content white-text"> 
+                    <a href="mailto:${person.email}"> ${person.email}</a>
+                  </div>
                 </div>
             </div>
           </div>`;
@@ -90,8 +94,9 @@ function generateHTMl(teamArray) {
         })
         .join("")}
       </div>
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	    <script src="index.js"></>
+	    <script src="index.js"></script>
     </div>
   </body>
 </html>

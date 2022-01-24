@@ -5,10 +5,9 @@ const Employee = require('./js/lib/employee');
 const Engineer = require('./js/lib/engineer');
 const Intern = require('./js/lib/intern');
 const Manager = require('./js/lib/manager');
-
-
 const render = require('./src/generateHTML');
 
+// questions for user to answer regarding their employees
 inquirer
 const questions = [
         {
