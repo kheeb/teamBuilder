@@ -1,7 +1,7 @@
 # teamBuilder
 
 ## Description
-  With this program, a user can build their own HTML site directly from the command line in their integrated terminal in order to keep track of their employee's and their information.
+  With this program, a user can build their own HTML site directly from the command line in their integrated terminal in order to keep track of their employees and their information.
 
 ## Table of Contents
    * [Installation](#Installation)
@@ -11,7 +11,7 @@
    * [Tests](#Tests)
 
 ## Installation
-  Clone the repo down to your local machine, then open the index.js file inside the integrated terminal.
+  Clone the repository down to your local machine, then open the index.js file inside the integrated terminal.
 
 ## Usage
   While inside the integrated terminal, run 'node index.js' and follow the question prompts to add employees, then when you're done adding team members, the app will create your new HTML file.
