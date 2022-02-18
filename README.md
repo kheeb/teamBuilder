@@ -17,7 +17,8 @@
   While inside the integrated terminal, run 'node index.js' and follow the question prompts to add employees, then when you're done adding team members, the app will create your new HTML file.
   
 ## Demo
-   ![image](https://user-images.githubusercontent.com/93744725/150801370-59f7d8b7-a425-4096-9b87-32a6c7893c4c.png)
+  ![teamBuilder-screenshot](https://user-images.githubusercontent.com/93744725/154716408-742128df-a48c-4d25-9022-81d9326b9075.png)
+  ![image](https://user-images.githubusercontent.com/93744725/150801370-59f7d8b7-a425-4096-9b87-32a6c7893c4c.png)
   
 ## License
   MIT is the chosen license for this project.
